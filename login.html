@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Login</title>
+
+    <link rel="stylesheet" href="css/sass/main.css" />
+  </head>
+  <body>
+    <!-- Background clouds -->
+    <div id="clouds">
+      <div class="cloud foreground"></div>
+      <div class="cloud background"></div>
+      <div class="cloud foreground"></div>
+      <div class="cloud background"></div>
+      <div class="cloud foreground"></div>
+      <div class="cloud background"></div>
+      <div class="cloud foreground"></div>
+      <div class="cloud background"></div>
+      <div class="cloud foreground"></div>
+      <div class="cloud background"></div>
+    </div>
+
+    <div id="main" class="panel">
+      <h2>Dashboard</h2>
+      <p>
+        Welcome to brand new dashboard. Powered by
+        <a href="http://github.com/atageldi194229">Atasan</a>
+      </p>
+
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+        <path
+          d="M498.11,206.4,445.31,14.72,248.2,66.08,219,116.14l-59.2-.43L15.54,256,159.82,396.32l59.17-.43,29.24,50,197.08,51.36,52.8-191.62-30-49.63ZM223.77,124.2,374.55,86.51,288,232.33H114.87Zm0,263.63L114.87,279.71H288l86.55,145.81Zm193,14L330.17,256l86.58-145.84L458.56,256Z"
+        />
+      </svg>
+
+      <div class="login">
+        <h3>Login</h3>
+
+        <form action="">
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group inline">
+            <input type="checkbox" name="remember_me" id="remember_me" />
+            <label for="remember_me">Remember me</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

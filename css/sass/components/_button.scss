@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@mixin button($background-color) {
+  outline: unset;
+  border: unset;
+
+  padding: 0.3rem 1rem;
+  box-shadow: 2px 2px 4px $dark-grey;
+  background-color: $background-color;
+
+  &:hover {
+    box-shadow: 2px 2px 5px $dark-grey;
+    background-color: rgba($background-color, 10%);
+  }
+
+  &:active {
+    box-shadow: 2px 2px 3px $dark-grey;
+  }
+}
+
+.button {
+  @include button($half-transparent-color);
+}
+
+.green-button {
+  @include button($transparent-green-color);
+}
+
+.blue-button {
+  @include button($transparent-blue-color);
+}
